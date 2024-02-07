@@ -17,7 +17,7 @@
 # Inherit from gtaxl-common
 include device/samsung/gtaxl-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/samsung/gtaxllte
+DEVICE_PATH := device/samsung/gtaxllte
 
 # RIL
 BOARD_PROVIDES_LIBRIL := true
@@ -34,7 +34,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE   := 3145728000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 10737418240
 
 # Properties
-TARGET_VENDOR_PROP += $(LOCAL_PATH)/vendor.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # HIDL
-DEVICE_MANIFEST_FILE += $(LOCAL_PATH)/device_manifest.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/device_manifest.xml
