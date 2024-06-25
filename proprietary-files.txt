@@ -29,7 +29,5 @@ vendor/etc/plmn_se13.bin
 -vendor/lib64/libsec-ril.so
 -vendor/lib64/libsecnativefeature.so
 -vendor/lib64/libsemnativecarrierfeature.so
--vendor/lib64/vendor.samsung.hardware.radio@2.0.so
--vendor/lib64/vendor.samsung.hardware.radio@2.1.so
 -vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so
 -vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so

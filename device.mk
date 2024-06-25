@@ -47,7 +47,8 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.4:64 \
     android.hardware.radio.config@1.2:64 \
     android.hardware.radio.deprecated@1.0:64 \
-    libprotobuf-cpp-full-3.9.1-vendorcompat
+    libprotobuf-cpp-full-3.9.1-vendorcompat \
+    vendor.samsung.hardware.radio@2.1.vendor
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
