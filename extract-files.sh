@@ -53,14 +53,6 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
-function blob_fixup() {
-    case "${1}" in
-        vendor/lib64/libsec-ril.so)
-            "${PATCHELF}" --replace-needed libprotobuf-cpp-full-3.9.1.so libprotobuf-cpp-full.so "${2}"
-            ;;
-    esac
-}
-
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" true "${CLEAN_VENDOR}"
 
