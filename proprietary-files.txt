@@ -1,20 +1,20 @@
-# cbd - For gtaxllte - From A305GUBU8CWE3
+# Files are from Samsung's A305GUBU8CWE3 firmware unless pinned
+
+# cbd - For gtaxllte
 -vendor/bin/cbd
 
 # cbd - For gtanotexllte - From T585XXS7CUI5
-# Newer cbd from A305GUBU8CVK1 apparently doesn't work for some note devices
--vendor/bin/cbd_note
+# Note it's located in the boot image's ramdisk.
+# Newer cbd from A305GUBU8CWE3 apparently doesn't work for some note devices.
+-sbin/cbd:vendor/bin/cbd_note|9c65f1cfe2bb8674284e646dfd8049dadf5b9436
 
 # GPS - From A720SKSU5CUJ2
--vendor/bin/hw/gpsd
-vendor/etc/gnss/ca.pem
--vendor/lib64/libwrappergps.so
--vendor/lib64/hw/gps.default.so
+-vendor/bin/hw/gpsd|481d950abc178b5e444dd2e75d4226614c7c4032
+vendor/etc/gnss/ca.pem|c2141d17a4b303abc871b10e153aac09ba5384c1
+-vendor/lib64/libwrappergps.so|e771590eea22f1643c46935983db48f34263fead
+-vendor/lib64/hw/gps.default.so|e7130572ed5006dd9c3e792584e650a437dc013e
 
-# RIL - From A305GUBU8CWE3
-# Only modification made: libsec-ril.so has been patched to load libprotobuf-cpp-full.so instead
-# of libprotobuf-cpp-full-3.9.1.so:
-#  $ ../../../../prebuilts/extract-tools/linux-x86/bin/patchelf-0_9 --replace-needed libprotobuf-cpp-full-3.9.1.so libprotobuf-cpp-full.so vendor/lib64/libsec-ril.so
+# RIL
 -vendor/bin/hw/rild
 vendor/etc/plmn_delta.bin
 vendor/etc/plmn_delta_attaio.bin
