@@ -23,14 +23,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_tablet.mk)
+$(call inherit-product, vendor/superior/config/common.mk)
 
 # Device identifiers. These must come after all inclusions.
 PRODUCT_DEVICE := gtaxllte
 PRODUCT_MODEL := SM-T585
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := Samsung
-PRODUCT_NAME := lineage_gtaxllte
+PRODUCT_NAME := superior_gtaxllte
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
